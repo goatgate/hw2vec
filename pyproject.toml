@@ -1,0 +1,26 @@
+[tool]
+name = "your_project_name"
+description = "A brief description of your project."
+authors = ["Your Name <your.email@example.com>"]
+version = "0.1.0"
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+# Additional uv package manager configuration can be added here.
+
+[project]
+name = "your_project_name"
+description = "A brief description of your project."
+authors = ["Your Name <your.email@example.com>"]
+dependencies = [
+    "uv",
+    # Add other project dependencies here, pulled from requirements.txt
+]
+
+[tool.dev]
+dev-dependencies = [
+    # Add dev dependencies here, pulled from requirements_dev.txt
+]
